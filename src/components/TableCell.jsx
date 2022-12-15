@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const TableCell = () => {
+export const TableCell = ({ word }) => {
   return (
-    <div></div>
+    <td>{word}</td>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import TableRow from './TableRow'
+import {TableRow} from './TableRow'
 
 export const TableBody = () => {
   const [flights, setFlights] = useState(null)
@@ -19,7 +19,7 @@ export const TableBody = () => {
   return (
     <tbody>
       {flights?.map((flight, _index) => (
-        <TableRow key={_index} flight={flights} />
+        <TableRow key={_index} flight={flight} />
       ))}
     </tbody>
   )
